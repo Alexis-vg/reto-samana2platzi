@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root
+{
+    --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+    --Desaturated-Dark: hsl(214, 17%, 51%);
+    --Grayish-Blue:hsl(212, 23%, 69%);
+    --Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+/* font-family: 'Manrope', sans-serif; CSS RULE 500 y 700 - Font size: 13px en el body*/
+html
+{
+    font-family: 'Manrope', sans-serif;
+    font-size: 62.5%;
+}
+body
+{
+    background-color: var(--Light-Grayish-Blue);
+}
+.main-card-container
+{
+    width: 87%;
+    max-height: 500px;
+    max-width: 400px;
+    min-width: 288px;
+    margin: 40px auto;
+    
+    
+    
+}
+.main-card-container__img
+{
+    width: 100%;
+    height: auto;    
+}
+.main-card-container__img img
+{
+    width: 100%;
+    height: 100%;
+    vertical-align: top; /* ajajajaj para no tener espacio entre ma imagen buen truco */
+    border-radius: 8px 8px 0 0;
+    
+}
+.main-card-container__content
+{
+
+    padding-top: 30px;
+    background-color: white;
+    border-radius: 0 0 8px 8px;
+}
+.main-card-container__content--title
+{
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--Very-Dark-Grayish-Blue);
+}
+.main-card-container__content--description
+{
+    padding-right: 25px;
+    padding-left: 25px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--Desaturated-Dark);
+}
+.main-card-container__footer
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+    border-radius: 0 0 8px 8px;  
+}
+
+.profile__photo
+{
+    width: 50px;
+    height: 50px;
+    margin-left: 24px;
+    background-image: url(./images/avatar-michelle.jpg);
+    background-size: cover;
+    border-radius: 50px;
+}
+.profile__data
+{
+
+    color: var(--Very-Dark-Grayish-Blue);
+    font-size: 1.3rem;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-right: 16px;
+    
+}
+.share-logo
+{
+    width: 30px;
+    height: 30px;
+    
+    margin-right: 15px;
+    background-color: var(--Light-Grayish-Blue);
+    border-radius: 50px;
+    background-image: url(./images/icon-share.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
